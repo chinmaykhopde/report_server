@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <link rel="stylesheet" href="style.css">
+  <div class="col-md-6 offset-md-3 mt-5">
+    <br>
+    <style>
+      h1 {
+        font-size: 20px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      button {
+        text-align: center;
+      }
+    </style>
+    <h1>Get Daily Report</h1>
+    <form accept-charset="UTF-8" action="/getDaily" method="POST" target="_blank">
+      <div class="form-group">
+        <!-- <label for="exampleInputEmail1" required="required">Email address</label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email"> -->
+        <label for="daily">Report Date</label>
+        <input type="date" id="daily" name="report_date" value="2020-01-01" min="2020-01-01">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <hr>
+    <h1>Get Monthly Reports</h1>
+    <form accept-charset="UTF-8" action="/getMonthly" method="POST" target="_blank">
+      <!-- <div class="form-group">
+        <label for="exampleFormControlSelect1">Select Month</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="platform" required="required">
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+      </div> -->
+      
+      <center>
+        <div class="form-group">
+        <label for="monthly">Report Date</label>
+          <input type="month" id="monthly" name="report_date" value="2020-01" min="2020-01-01">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </center>
+    </form>
+  </div>
+</body>
+
+</html>
