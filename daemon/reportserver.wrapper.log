@@ -1,0 +1,50 @@
+2020-02-01 14:41:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Chinmay\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Chinmay\Desktop\reports_server\app.js --log "Report Server wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-02-01 14:41:12 - Started 13248
+2020-02-01 14:48:30 - Stopping reportserver.exe
+2020-02-01 14:48:30 - ProcessKill 13248
+2020-02-01 14:48:30 - Found child process: 3596 Name: conhost.exe
+2020-02-01 14:48:30 - Found child process: 6652 Name: node.exe
+2020-02-01 14:48:30 - Stopping process 3596
+2020-02-01 14:48:30 - Send SIGINT 3596
+2020-02-01 14:48:31 - SIGINT to 3596 failed - Killing as fallback
+2020-02-01 14:48:31 - Stopping process 6652
+2020-02-01 14:48:31 - Send SIGINT 6652
+2020-02-01 14:48:31 - SIGINT to 6652 failed - Killing as fallback
+2020-02-01 14:48:31 - Stopping process 13248
+2020-02-01 14:48:31 - Send SIGINT 13248
+2020-02-01 14:48:31 - SIGINT to 13248 failed - Killing as fallback
+2020-02-01 14:48:31 - Finished reportserver.exe
+2020-02-01 14:48:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Chinmay\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Chinmay\Desktop\reports_server\app.js --log "Report Server wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-02-01 14:48:32 - Started 10260
+2020-02-01 14:51:29 - Stopping reportserver.exe
+2020-02-01 14:51:29 - ProcessKill 10260
+2020-02-01 14:51:29 - Found child process: 7756 Name: conhost.exe
+2020-02-01 14:51:29 - Found child process: 6640 Name: node.exe
+2020-02-01 14:51:29 - Stopping process 7756
+2020-02-01 14:51:29 - Send SIGINT 7756
+2020-02-01 14:51:29 - SIGINT to 7756 failed - Killing as fallback
+2020-02-01 14:51:29 - Stopping process 6640
+2020-02-01 14:51:29 - Send SIGINT 6640
+2020-02-01 14:51:29 - SIGINT to 6640 failed - Killing as fallback
+2020-02-01 14:51:29 - Stopping process 10260
+2020-02-01 14:51:29 - Send SIGINT 10260
+2020-02-01 14:51:29 - SIGINT to 10260 failed - Killing as fallback
+2020-02-01 14:51:29 - Finished reportserver.exe
+2020-02-01 14:51:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Chinmay\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Chinmay\Desktop\reports_server\app.js --log "Report Server wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-02-01 14:51:31 - Started 7120
+2020-02-01 14:52:27 - Stopping reportserver.exe
+2020-02-01 14:52:27 - ProcessKill 7120
+2020-02-01 14:52:27 - Found child process: 7676 Name: conhost.exe
+2020-02-01 14:52:27 - Found child process: 7148 Name: node.exe
+2020-02-01 14:52:27 - Stopping process 7676
+2020-02-01 14:52:27 - Send SIGINT 7676
+2020-02-01 14:52:27 - SIGINT to 7676 failed - Killing as fallback
+2020-02-01 14:52:27 - Stopping process 7148
+2020-02-01 14:52:27 - Send SIGINT 7148
+2020-02-01 14:52:27 - SIGINT to 7148 failed - Killing as fallback
+2020-02-01 14:52:27 - Stopping process 7120
+2020-02-01 14:52:28 - Send SIGINT 7120
+2020-02-01 14:52:28 - SIGINT to 7120 failed - Killing as fallback
+2020-02-01 14:52:28 - Finished reportserver.exe
+2020-02-01 14:52:29 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Chinmay\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\Chinmay\Desktop\reports_server\app.js --log "Report Server wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-02-01 14:52:29 - Started 11360

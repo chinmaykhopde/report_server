@@ -17,8 +17,10 @@ app.get('/', (req, res) => {
 app.post('/getMonthly', (req, res) => {
 	if (req.body.report_month) {
 		get_all_reports().then( (result) => {
+			let found_file = false;
 			for (let i = 0; i < result.length; i++) {
 				if (result[i].search(req.body.report_month) !== -1) {
+					found_file = true;
 					var extention = (result[i].split('.'));
 					var MIME_Type;
 					if (extention[1] === 'txt') {
@@ -44,6 +46,9 @@ app.post('/getMonthly', (req, res) => {
 					break;
 				}
 			}
+			if (found_file === false) {
+				res.send("No Report For The Selected Month");
+			}
 		}, (error) => {
 			console.error(error);
 		});
@@ -56,8 +61,10 @@ app.post('/getMonthly', (req, res) => {
 app.post('/getDaily', (req, res) => {
 	if (req.body.report_date) {
 		get_all_reports().then( (result) => {
+			let found_file = false;
 			for (let i = 0; i < result.length; i++) {
 				if (result[i].search(req.body.report_date) !== -1) {
+					found_file = true;
 					var extention = (result[i].split('.'));
 					var MIME_Type;
 					if (extention[1] === 'txt') {
@@ -67,21 +74,24 @@ app.post('/getDaily', (req, res) => {
 						MIME_Type = 'application/pdf';
 					}
 					if (extention[1] === 'xls') {
-						// MIME_Type = 'application/vnd.ms-excel';
-						res.redirect('http://view.officeapps.live.com/op/view.aspx?src=' + result[i].slice(1, -1));
-						break;
+						MIME_Type = 'application/vnd.ms-excel';
+						// res.redirect('http://view.officeapps.live.com/op/view.aspx?src=' + result[i].slice(1, -1));
+						// break;
 					}
 					if (extention[1] === 'xlsx') {
-						// MIME_Type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-						console.log('http://view.officeapps.live.com/op/view.aspx?src=.\\report_files\\' + result[i]);
-						res.redirect('http://view.officeapps.live.com/op/view.aspx?src.\\report_files\\' + result[i]);
-						break;
+						MIME_Type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+						// console.log('http://view.officeapps.live.com/op/view.aspx?src=.\\report_files\\' + result[i]);
+						// res.redirect('http://view.officeapps.live.com/op/view.aspx?src.\\report_files\\' + result[i]);
+						// break;
 					}
 					res.set('Content-disposition', 'inline; filename="' + result[i] + '"');
 					res.set('Content-type', MIME_Type);
 					res.sendFile(REPORT_FILE_PATH + result[i]);
 					break;
 				}
+			}
+			if (found_file === false) {
+				res.send("No Report For The Selected Date");
 			}
 		}, (error) => {
 			console.error(error);
